@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+  <head>
+      <title>Jogo Pong</title>
+      <link rel="stylesheet" href="/Pong/dist/css/style.css" />
+      <link rel="shortcut icon" href="/Pong/dist/favicon/ping-pong.png" type="image/x-icon" />
+  </head>
+
+  <body>  
+    <div class="title">PONG GAME</div>
+
+    <main class="stage" role="application" aria-label="Pong - área do jogo">
+
+      <!-- Placar simples -->
+      <div class="scoreboard" aria-hidden="false">
+        <div class="score" aria-label="Jogadosr 1">
+          <span class="value p1" id="scoreP1">0</span>
+        </div>
+
+        <div class="score" aria-label="Jogador 2">
+          <span class="value p2" id="scoreP2">0</span>
+        </div>
+      </div>
+
+      <!-- Quadra (sem animação) -->
+      <section class="court" aria-label="Quadra do jogo">
+        <div class="net" aria-hidden="true"></div>
+
+        <!-- Raquetes estáticas (posições iniciais) -->
+        <div class="paddle left" id="paddle-left" aria-hidden="true"></div>
+        <div class="paddle right" id="paddle-right" aria-hidden="true"></div>
+
+        <!-- Bola estática (posição inicial no centro) -->
+        <div class="ball" id="ball" aria-hidden="true"></div>
+
+        <div class="info">
+          PONG PARA 2 JOGADORES. 
+          <br>
+          Teclas "W" e "S" para mover a raquete esquerda.
+          <br>
+          Setas "⭡" e "⭣" para mover a raquete direita.
+        </div>
+
+        <div class="message-box">
+          <p class="message">GANHOU!</p>
+          <button class="btn" id="reiniciar">REINICIAR</button>
+        </div>
+      </section>
+    </main>
+
+    <button class="pause-btn" id="pausar" title="Clique para Pausar o Jogo">PAUSAR</button>
+
+    <script type="module" src="/Pong/dist/js/game.js"></script>
+  </body>
+</html>
