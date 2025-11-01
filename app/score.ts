@@ -7,7 +7,7 @@ export const scoreP2: HTMLElement = document.getElementById("scoreP2");
 export const messageWin: HTMLElement = document.querySelector(".message-box");
 
 //--- Variáveis Globais ---
-let score1: number = 0;
+let score1: number = 01;
 let score2: number = 0;
 const points: HTMLAudioElement = new Audio("/Pong/dist/sound/points.mp3");
 
