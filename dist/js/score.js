@@ -6,7 +6,7 @@ export const scoreP2 = document.getElementById("scoreP2");
 export const messageWin = document.querySelector(".message-box");
 //--- Variáveis Globais ---
 let score1 = 0;
-let score2 = 01;
+let score2 = 0;
 const points = new Audio("/Pong/dist/sound/points.mp3");
 //--- Funções ---
 export function scorePlayer1() {
